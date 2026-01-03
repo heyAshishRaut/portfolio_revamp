@@ -4,8 +4,8 @@ import CalComButton from "@/app/components/calcom"
 import Image from "next/image"
 import GithubCalendar from "@/app/components/github-calendar"
 import Projects from "@/app/components/projects"
-import TechStack from "@/app/components/tech-stack";
-import Blog from "@/app/components/blog";
+import TechStack from "@/app/components/tech-stack"
+import Blog from "@/app/components/blog"
 
 const Home = () => {
     return (
@@ -36,10 +36,10 @@ const Home = () => {
                         </div>
 
                         <div className={`text-[#0088FF] flex items-center justify-between px-3`}>
-                            <a className={`underline underline-offset-4`}>Mail</a>
-                            <a className={`underline underline-offset-4`}>LinkedIn</a>
-                            <a className={`underline underline-offset-4`}>Twitter</a>
-                            <a className={`underline underline-offset-4`}>GitHub</a>
+                            <a href={`mailto:theashish32@gmail.com`} target={`_blank`} className={`underline underline-offset-4`}>Mail</a>
+                            <a href={`https://www.linkedin.com/in/ashishraut0302/`} target={`_blank`} className={`underline underline-offset-4`}>LinkedIn</a>
+                            <a href={`https://x.com/heyashishraut`} target={`_blank`} className={`underline underline-offset-4`}>Twitter</a>
+                            <a href={`https://github.com/heyAshishRaut`} target={`_blank`} className={`underline underline-offset-4`}>GitHub</a>
                         </div>
 
                         <div className="flex items-center justify-between md:justify-start md:gap-x-10">
