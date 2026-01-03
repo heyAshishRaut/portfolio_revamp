@@ -28,9 +28,9 @@ const Projects = () => {
                                     <div className={`text-xl`}>{e.name}</div>
                                     <div className={`text-justify text-neutral-400`}>{e.summary}</div>
                                     <div className={`self-end flex gap-x-2`}>
-                                        <div className={`border border-neutral-400/50 h-[30px] px-5 flex items-center justify-center`}>
+                                        <a href={e.code} target={`_blank`} className={`border border-neutral-400/50 h-[30px] px-5 flex items-center justify-center`}>
                                             Code
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             ))
@@ -44,9 +44,9 @@ const Projects = () => {
                                     <div className={`text-xl`}>{i + 1}. {e.name}</div>
                                     <div className={`text-justify text-neutral-400`}>{e.summary}</div>
                                     <div className={`self-end flex gap-x-2`}>
-                                        <div className={`border border-neutral-400/50 h-[30px] px-5 flex items-center justify-center`}>
+                                        <a href={e.code} target={`_blank`} className={`border border-neutral-400/50 h-[30px] px-5 flex items-center justify-center`}>
                                             Code
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             ))

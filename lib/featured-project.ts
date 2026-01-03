@@ -27,7 +27,7 @@ const featuredProjects: FeaturedProject[] = [
         Space is a real-time chat application designed for short-lived, intentional conversations without unnecessary noise. Users can create or join a space with up to 10 participants, exchange live messages, share files, and react to messages in real time. Every space automatically deletes after one hour, ensuring conversations remain temporary, focused, and clutter-free.
         The project is built using Next.js, Node.js, and Supabase Realtime, with a strong emphasis on simplicity, performance, and real-time collaboration. While the application was deployed on free-tier hosting, shared resources caused noticeable performance issues despite correct functionality. To preserve the intended experience, the complete project has been shared via GitHub, allowing anyone to run it locally and explore its full real-time capabilities.
         `,
-        code: ``
+        code: `https://github.com/heyAshishRaut/space-chat-dec`
     },
     {
         name: `Stack`,
@@ -37,7 +37,7 @@ const featuredProjects: FeaturedProject[] = [
         Stack is an intelligent application designed to help you store and manage important links in one clean, organized dashboard. Each link can be saved with a title, custom tags, and a description, making it easy to find later. The app automatically categorizes links based on their source, such as YouTube, music platforms, and social media sites like Facebook, Twitter, LinkedIn, and Instagram.
         Stack provides dedicated sections for different platforms, along with a tag-based view for flexible organization. Every link includes a preview, so you can quickly understand its content without opening it. You can also share your entire dashboard with others using a secure, unique URL that expires after one hour, ensuring privacy and controlled access. Perfect for creators, developers, and anyone who wants their links sorted beautifully.
         `,
-        code: ``
+        code: `https://github.com/heyAshishRaut/stack-app`
     },
     {
         name: `AI-Powered YouTube Title Improver`,
@@ -47,7 +47,7 @@ const featuredProjects: FeaturedProject[] = [
         This project is an AI-powered YouTube Title Improver built using Motia, a modern backend framework designed for structured, step-based workflows. Users simply enter their email address and YouTube channel name, and the application fetches the latest 5 videos from their channel using the YouTube Data API.
         For each video, the app generates improved, SEO-friendly titles along with explanations on why each title performs better in terms of clarity, urgency, and engagement. Once the analysis is complete, a detailed report is automatically sent to the user via email using the Resend API. Built with TypeScript, Motia, and AI-driven logic, this project demonstrates how easily Motia can be used to create clean, scalable AI workflows that connect external APIs and deliver real value end-to-end.
         `,
-        code: ``
+        code: `https://github.com/heyAshishRaut/motia-yt`
     },
     {
         name: `Listly`,
@@ -57,7 +57,7 @@ const featuredProjects: FeaturedProject[] = [
         Listly is a thoughtfully crafted todo application that combines productivity with a calm, elegant interface. Users can create and manage tasks with ease, assigning each todo a deadline and a priority level—high, medium, or low—to stay organized and focused on what matters most.
         The application supports both dark and light modes, adapting smoothly to different environments and user preferences. A built-in live clock is integrated into the UI, helping users stay time-aware while planning and executing tasks. With its clean design, priority-based task management, and deadline tracking, Listly makes daily planning simple, visual, and effective.
         `,
-        code: ``
+        code: `https://github.com/heyAshishRaut/Listly`
     }
 ]
 
