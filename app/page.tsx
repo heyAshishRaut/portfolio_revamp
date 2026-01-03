@@ -1,65 +1,81 @@
-import Image from "next/image";
+import { cn } from "@/lib/utils"
+import user from "@/public/user.webp"
+import CalComButton from "@/app/components/calcom"
+import Image from "next/image"
+import GithubCalendar from "@/app/components/github-calendar"
+import Projects from "@/app/components/projects"
+import TechStack from "@/app/components/tech-stack";
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+const Home = () => {
+    return (
+        <div className={cn(`min-h-screen w-screen bg-black font-mono text-white text-[13px] flex justify-center`)}>
+            <div className={cn(`h-full w-full md:h-full md:w-[600px] px-[10px]`)}>
+                <div className={cn(`h-full w-full my-[10px] border-l border-r border-neutral-400/50`)}>
+                    {/* Hero Section */}
+                    <div className={cn(`w-full border-b border-t border-neutral-400/50 p-3 flex flex-col gap-y-6`)}>
+                        <div className={`p-1 border border-neutral-400/50 h-[70px] w-[70px]`}>
+                            <Image src={user} alt={`user profile`} height={70} width={70} className={`rounded-full`}/>
+                        </div>
+
+                        <div className={`font-instrument text-4xl mt-2`}>Ashish Raut</div>
+
+                        <div className={`w-full flex flex-col gap-y-2`}>
+                            <div className={`flex items-center gap-x-3`}>
+                                <div>
+                                    <svg className="h-[14px] w-[14px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#f35b04"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg>
+                                </div>
+                                <div>From ideas to code.</div>
+                            </div>
+                            <div className={`flex items-center gap-x-3`}>
+                                <div>
+                                    <svg className="h-[14px] w-[14px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#f35b04"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg>
+                                </div>
+                                <div>Where design meets development.</div>
+                            </div>
+                        </div>
+
+                        <div className={`text-[#0088FF] flex items-center justify-between px-3`}>
+                            <a className={`underline underline-offset-4`}>Mail</a>
+                            <a className={`underline underline-offset-4`}>LinkedIn</a>
+                            <a className={`underline underline-offset-4`}>Twitter</a>
+                            <a className={`underline underline-offset-4`}>GitHub</a>
+                        </div>
+
+                        <div className="flex items-center justify-between md:justify-start md:gap-x-10">
+                            <div>Available for Work</div>
+                            <CalComButton/>
+                        </div>
+
+                        <GithubCalendar/>
+                    </div>
+
+                    {/* Experience */}
+                    <div className={cn(`w-full border-b border-neutral-400/50 p-3 flex flex-col gap-y-6`)}>
+                        <div className=" text-xl font-semibold">
+                            <span className="text-[#f35b04] pr-1">//</span>
+                            Projects
+                        </div>
+
+                        <div className={cn(`w-full`)}>
+                            <Projects/>
+                        </div>
+                    </div>
+
+                    {/* Tech Stack */}
+                    <div className={cn(`w-full border-b border-neutral-400/50 p-3 flex flex-col gap-y-6`)}>
+                        <div className=" text-xl font-semibold">
+                            <span className="text-[#f35b04] pr-1">//</span>
+                            Tech Stack
+                        </div>
+
+                        <div className={cn(`w-full`)}>
+                            <TechStack/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+    )
 }
+
+export default Home
