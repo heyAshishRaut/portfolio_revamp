@@ -5,6 +5,7 @@ import Image from "next/image"
 import GithubCalendar from "@/app/components/github-calendar"
 import Projects from "@/app/components/projects"
 import TechStack from "@/app/components/tech-stack";
+import Blog from "@/app/components/blog";
 
 const Home = () => {
     return (
@@ -70,6 +71,18 @@ const Home = () => {
 
                         <div className={cn(`w-full`)}>
                             <TechStack/>
+                        </div>
+                    </div>
+
+                    {/* Blogs */}
+                    <div className={cn(`w-full border-b border-neutral-400/50 p-3 flex flex-col gap-y-6`)}>
+                        <div className=" text-xl font-semibold">
+                            <span className="text-[#f35b04] pr-1">//</span>
+                            Blogs
+                        </div>
+
+                        <div className={cn(`w-full`)}>
+                            <Blog/>
                         </div>
                     </div>
                 </div>
