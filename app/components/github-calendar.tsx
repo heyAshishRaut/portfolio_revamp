@@ -7,6 +7,7 @@ const GithubCalendar = () => {
         <div className="p-4">
             <GitHubCalendar
                 username="heyAshishRaut"
+                year={2026}
                 blockSize={14}
                 blockMargin={5}
                 fontSize={14}
