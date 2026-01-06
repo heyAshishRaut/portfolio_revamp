@@ -2,7 +2,7 @@ import { blogs } from "@/lib/blogs"
 
 const Blog = () => {
     return (
-        <div>
+        <div className={`flex flex-col gap-y-3`}>
             {
                 blogs.map((e, i) => (
                     <div key={i} className={`w-full flex flex-col gap-y-4 border border-neutral-400/50 p-2`}>
